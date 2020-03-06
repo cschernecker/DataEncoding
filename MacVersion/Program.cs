@@ -11,7 +11,12 @@ namespace DataEncoding
     {
         static void Main(string[] args)
         {
-            FileFromBase64();
+            //FileFromBase64();
+
+            string b64string = "";
+            HttpClient clinent = new HttpClient();
+
+            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, "http:nowhere.winsor.edu")
 
             Console.WriteLine("Done!");
             Console.ReadLine();
